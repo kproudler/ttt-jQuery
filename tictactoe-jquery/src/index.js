@@ -1,6 +1,8 @@
-const View = require('./ttt-view');// require appropriate file
-const Game = require('../../ttt/game');// require appropriate file
+const View = require('./ttt-view');
+const Game = require('../../ttt/game');
 
   $(() => {
-    // Your code here
+    const rootEl = $('.ttt');
+    game = new Game();
+    new View(game, rootEl);
   });
