@@ -10,6 +10,17 @@ ul {
   list-style: none;
 }
 
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -27,5 +38,48 @@ li {
 }
 
 li:hover {
-    background: yellow;
+  background: yellow;
+}
+
+.x,
+.o {
+  background: white;
+  cursor: default;
+}
+
+.x:hover,
+.o:hover {
+  background: white;
+}
+
+.x:after,
+.o:after {
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.x:after {
+  content: "x";
+}
+
+.o:after {
+  content: "o";
+}
+
+.game-over li {
+  color: red;
+  cursor: default;
+  background: white;
+}
+
+.winner-x .x,
+.winner-o .o {
+  background: green;
+  color: white;
+}
+
+figcaption {
+  font-size: 30px;
 }
